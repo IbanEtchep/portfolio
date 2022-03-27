@@ -7,7 +7,7 @@
       </div>
 
       <nav :class="isOpen ? 'block' : 'hidden-mobile'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
-        <nuxt-link to="/">A propos</nuxt-link>
+        <nuxt-link to="/about">A propos</nuxt-link>
         <nuxt-link to="/portfolio">Portfolio</nuxt-link>
         <nuxt-link to="/contact">Contact</nuxt-link>
       </nav>
@@ -130,7 +130,7 @@ header {
   }
 }
 
-.nuxt-link-exact-active, .nuxt-link-active {
+.nuxt-link-exact-active {
   color: var(--text-color-terciary);
 
 }
