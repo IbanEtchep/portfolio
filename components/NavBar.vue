@@ -44,6 +44,7 @@ export default {
 header {
   background-color: var(--bg-primary);
   padding: 1.5rem;
+  box-shadow: 1px 1px 5px 0 rgb(1 1 1 / 5%);
 
   .wrapper {
     display: flex;

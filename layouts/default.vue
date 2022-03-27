@@ -8,6 +8,8 @@
       </div>
     </main>
 
+    <Footer/>
+
   </div>
 </template>
 
@@ -20,7 +22,8 @@ export default {
 <style lang="scss">
 
 main .wrapper {
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 </style>
