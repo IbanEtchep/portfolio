@@ -7,7 +7,7 @@
       </div>
 
       <nav :class="isOpen ? 'block' : 'hidden-mobile'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
-        <nuxt-link to="/about">A propos</nuxt-link>
+        <nuxt-link to="/">A propos</nuxt-link>
         <nuxt-link to="/portfolio">Portfolio</nuxt-link>
         <nuxt-link to="/contact">Contact</nuxt-link>
       </nav>

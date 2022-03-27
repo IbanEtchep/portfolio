@@ -4,7 +4,7 @@
 
     <div class="articles">
       <div class="article" v-for="article of articles" :key="article.slug">
-        <nuxt-link :to="'portfolio/' + article.slug">
+        <nuxt-link :to="'/portfolio/' + article.slug">
           <div class="project-wrapper">
             <img :src="require(`~/assets/ressources/${article.img}`)" alt="thumb du projet">
             <div class="details">
