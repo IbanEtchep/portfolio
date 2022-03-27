@@ -1,0 +1,26 @@
+<template>
+  <div class="bg-secondary-light dark:bg-primary-dark min-h-screen flex flex-col">
+    <NavBar/>
+
+    <main>
+      <div class="wrapper">
+        <Nuxt/>
+      </div>
+    </main>
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: "default"
+}
+</script>
+
+<style lang="scss">
+
+main .wrapper {
+  margin-top: 2rem;
+}
+
+</style>
