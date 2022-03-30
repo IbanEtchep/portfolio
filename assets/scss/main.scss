@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  margin-bottom: 2rem;
+}
+
+h1 {
   font-size: 2em;
   font-weight: bolder;
 }
@@ -73,9 +77,14 @@ p {
   margin-bottom: 1.25rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .nuxt-content-container {
 
   ul {
+    margin-bottom: 1.25rem;
     padding-left: 2em;
     display: block;
     list-style-type: disc;
@@ -87,6 +96,18 @@ p {
   }
 
   li+li {
-    margin-top: 0.25em;
+    margin: 0.5em 0;
+  }
+
+  .nuxt-content-highlight {
+    pre {
+      border-radius: 10px;
+      background-color: var(--bg-primary);
+      text-shadow: none;
+      color: var(--text-color-primary);
+      .operator {
+        background-color: var(--bg-primary);
+      }
+    }
   }
 }

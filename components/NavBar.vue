@@ -43,7 +43,7 @@ export default {
 
 header {
   background-color: var(--bg-primary);
-  padding: 1.5rem;
+  padding: 3rem 0;
   box-shadow: 1px 1px 5px 0 rgb(1 1 1 / 5%);
 
   .wrapper {
@@ -68,6 +68,7 @@ header {
 
 .burger {
   display: none;
+  margin-left: 1rem;
 }
 
 .hidden-mobile {
@@ -79,7 +80,7 @@ header {
   font-weight: bolder;
 
   span {
-    display: inline-block
+    display: inline-block;
   }
 
   span:first-letter {
@@ -91,11 +92,11 @@ header {
 @media (max-width: 640px) {
   header {
     align-items: center;
+    padding: 1.5rem 0;
 
     .wrapper {
       margin: 0;
       display: flex;
-      justify-content: space-between;
 
       .theme-switcher {
         align-self: center;

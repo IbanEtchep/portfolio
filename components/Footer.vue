@@ -33,6 +33,10 @@ footer {
     svg {
       color: var(--text-color-primary);
     }
+
+    svg:hover {
+      color: var(--text-link-color);
+    }
   }
 
 }

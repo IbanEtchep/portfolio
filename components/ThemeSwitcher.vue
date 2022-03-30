@@ -25,6 +25,7 @@
 .theme-switcher {
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
 
   svg {
     height: 1.5rem;
