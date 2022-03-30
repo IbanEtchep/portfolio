@@ -20,7 +20,7 @@ export default {
 <style lang="scss">
 footer {
   background-color: var(--bg-primary);
-  padding: 1.5rem;
+  padding: 3rem;
 
   .wrapper {
     display: flex;
