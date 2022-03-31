@@ -6,7 +6,7 @@
         <span>Iban</span> <span>Etchepareborde</span>
       </div>
 
-      <nav :class="isOpen ? 'block' : 'hidden-mobile'" class="px-2 pt-2 pb-4 sm:flex sm:p-0">
+      <nav class="desktop-nav">
         <nuxt-link to="/about">A propos</nuxt-link>
         <nuxt-link to="/portfolio">Portfolio</nuxt-link>
         <nuxt-link to="/contact">Contact</nuxt-link>
@@ -26,6 +26,12 @@
       </div>
 
     </div>
+
+    <nav :class="isOpen ? 'opened' : ''" class="mobile-nav">
+      <nuxt-link to="/about">A propos</nuxt-link>
+      <nuxt-link to="/portfolio">Portfolio</nuxt-link>
+      <nuxt-link to="/contact">Contact</nuxt-link>
+    </nav>
   </header>
 </template>
 
@@ -71,11 +77,16 @@ header {
   margin-left: 1rem;
 }
 
-.hidden-mobile {
+.desktop-nav {
   display: block;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .logo {
+  margin-left: 1rem;
   font-size: 1.5rem;
   font-weight: bolder;
 
@@ -89,7 +100,7 @@ header {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   header {
     align-items: center;
     padding: 1.5rem 0;
@@ -126,8 +137,18 @@ header {
     flex-direction: column;
   }
 
-  .hidden-mobile {
+  .desktop-nav {
     display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+    margin: 2rem auto auto;
+    text-align: center;
+  }
+
+  .opened {
+    display: flex;
   }
 }
 
