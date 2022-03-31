@@ -10,6 +10,7 @@
         <nuxt-link to="/about">A propos</nuxt-link>
         <nuxt-link to="/portfolio">Portfolio</nuxt-link>
         <nuxt-link to="/contact">Contact</nuxt-link>
+        <nuxt-link to="/skills">Compétences</nuxt-link>
       </nav>
 
       <theme-switcher/>
@@ -58,13 +59,14 @@ header {
   }
 
   nav {
+    margin-left: 1rem;
     display: flex;
     justify-content: center;
     width: 60%;
   }
 
   a {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     padding: 1.25rem;
     color: var(--text-color-primary);

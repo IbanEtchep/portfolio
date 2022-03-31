@@ -1,7 +1,7 @@
 ---
-title: Apibook
-description: Application web en Symfony pour les apiculteurs !
-slug: apibook
+title: EasyFood
+description: Application de commande de plats en Symfony !
+slug: easyfood
 img: apibook-logo.png
 ---
 
@@ -9,21 +9,10 @@ img: apibook-logo.png
 
 ## Présentation
 
-Ce projet est un site que j'ai réalisé durant mon stage de 2ème année.
-C'est un site qui permet aux apiculteurs de gérer leurs ruchers et leurs ruches, avec tout ce qui va avec :
-- ToDoList
-- Suivi sanitaire
-- Suivi colonial
-- Suivi des reines
-- Suivi des ruches
-- Suivi des floraisons
-- Suivi de la pression du frelon
-- Affichage d'une carte montrant les points de floraisons et de pression du frelon en assemblant les données de tous les apiculteurs.
+Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt nollit anin id est laborun.
 
 ## Technologies utilisées
 
-- Symfony (Doctrine, twig..)
-- PostgresSQL
+- Framework PHP Symfony (Doctrine, twig..)
+- MariaDB
 - Bootstrap
-- JQuery
-- Axios (pour l'ajax)

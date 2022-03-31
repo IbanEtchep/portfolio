@@ -1,6 +1,6 @@
 ---
-title: Apibook
-description: Application web en Symfony pour les apiculteurs !
+title: Maison des ligues
+description: Exercice de création d'un site pour la ligue de Lauraine
 slug: apibook
 img: apibook-logo.png
 ---
@@ -20,19 +20,9 @@ C'est un site qui permet aux apiculteurs de gérer leurs ruchers et leurs ruches
 - Suivi de la pression du frelon
 - Affichage d'une carte montrant les points de floraisons et de pression du frelon en assemblant les données de tous les apiculteurs.
 
-## Description
-
-La première étape de ce projet a été de créer un wireframe du site. 
-Pour ce faire j'ai utilisé l'outil en ligne [Balsamiq](https://balsamiq.com/wireframes/).
-
-Une fois le wireframe validé, j'ai créé un schéma de la structure de la base de données à l'aide
-de l'application [DBSchema](https://dbschema.com/index_fr.html).
-
-//TODO
-
 ## Technologies utilisées
 
-- Frameword PHP Symfony (Doctrine, twig..)
+- Symfony (Doctrine, twig..)
 - PostgresSQL
 - Bootstrap
 - JQuery
