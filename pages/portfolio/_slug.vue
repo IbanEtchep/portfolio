@@ -2,10 +2,9 @@
   <div>
     <article>
       <nuxt-content :document="article" />
-      
-      <h2>Projects associés</h2>
     </article>
-    <div>
+    <div class="other-projects">
+        <h2>Projets associés</h2>
       <nuxt-link to=""></nuxt-link>
     </div>
   </div>
@@ -21,5 +20,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+    .other-projects {
+        margin-top: 2rem;
+    }
 </style>
