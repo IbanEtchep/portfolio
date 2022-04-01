@@ -22,6 +22,10 @@ export default {
 
 <style lang="scss">
     .other-projects {
-        margin-top: 2rem;
+        margin-top: 3rem;
+        
+        h2 {
+           font-size: 2em;
+        }
     }
 </style>
