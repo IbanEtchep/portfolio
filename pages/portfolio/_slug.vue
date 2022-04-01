@@ -2,6 +2,8 @@
   <div>
     <article>
       <nuxt-content :document="article" />
+      
+      <h2>Projects associés</h2>
     </article>
     <div>
       <nuxt-link to=""></nuxt-link>
