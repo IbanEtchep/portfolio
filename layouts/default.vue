@@ -22,8 +22,8 @@ export default {
 <style lang="scss">
 
 main .wrapper {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 </style>

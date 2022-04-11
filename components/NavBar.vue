@@ -7,7 +7,7 @@
       </div>
 
       <nav class="desktop-nav">
-        <nuxt-link to="/about">A propos</nuxt-link>
+        <nuxt-link to="/cv">CV</nuxt-link>
         <nuxt-link to="/portfolio">Portfolio</nuxt-link>
         <nuxt-link to="/contact">Contact</nuxt-link>
         <nuxt-link to="/skills">Compétences</nuxt-link>
@@ -29,7 +29,7 @@
     </div>
 
     <nav :class="isOpen ? 'opened' : ''" class="mobile-nav">
-      <nuxt-link to="/about">A propos</nuxt-link>
+      <nuxt-link to="/cv">CV</nuxt-link>
       <nuxt-link to="/portfolio">Portfolio</nuxt-link>
       <nuxt-link to="/contact">Contact</nuxt-link>
     </nav>
