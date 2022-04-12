@@ -9,8 +9,8 @@
       <nav class="desktop-nav">
         <nuxt-link to="/cv">CV</nuxt-link>
         <nuxt-link to="/portfolio">Portfolio</nuxt-link>
-        <nuxt-link to="/contact">Contact</nuxt-link>
         <nuxt-link to="/skills">Compétences</nuxt-link>
+        <nuxt-link to="/contact">Contact</nuxt-link>
       </nav>
 
       <theme-switcher/>
@@ -28,11 +28,11 @@
 
     </div>
 
-    <nav :class="isOpen ? 'opened' : ''" class="mobile-nav">
+    <nav v-if="isOpen" :class="isOpen ? 'opened' : ''" class="mobile-nav">
       <nuxt-link to="/cv">CV</nuxt-link>
       <nuxt-link to="/portfolio">Portfolio</nuxt-link>
-      <nuxt-link to="/contact">Contact</nuxt-link>
       <nuxt-link to="/skills">Compétences</nuxt-link>
+      <nuxt-link to="/contact">Contact</nuxt-link>
     </nav>
   </header>
 </template>
@@ -145,12 +145,8 @@ header {
   }
 
   .mobile-nav {
-    display: none;
     margin: 2rem auto auto;
     text-align: center;
-  }
-
-  .opened {
     display: flex;
   }
 }

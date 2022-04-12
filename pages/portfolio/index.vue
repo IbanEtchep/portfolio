@@ -32,6 +32,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "Portfolio"
+    };
+  },
   async asyncData({$content, params}) {
     const articles = await $content('projects', params.slug)
       .only(['title', 'description', 'img', 'slug'])

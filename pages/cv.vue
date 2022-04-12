@@ -1,7 +1,7 @@
 <template>
 
   <div class="curriculum">
-    <h1 class="text-center">Curriculum Vitae</h1>
+    <h1 class="text-center">Curriculum vitæ</h1>
 
     //TODO Bouton de téléchargement pdf
 
@@ -51,7 +51,12 @@
 
 <script>
 export default {
-  name: "cv"
+  name: "cv",
+  head() {
+    return {
+      title: "Curriculum vitæ"
+    };
+  },
 }
 </script>
 

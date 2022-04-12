@@ -11,7 +11,7 @@
     </h2>
 
     <ul class="sub-skills" :class="isSubSkillsVisible ? 'visible' : ''">
-      <li v-for="subSkill in skill.subSkills" key="subSkill">{{subSkill}}</li>
+      <li v-for="subSkill in skill.subSkills" :key="subSkill">{{subSkill}}</li>
     </ul>
 
   </div>
@@ -49,6 +49,10 @@ export default {
 .skill {
   h2 {
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 }
 
