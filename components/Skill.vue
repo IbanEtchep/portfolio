@@ -11,7 +11,7 @@
     </h2>
 
     <ul class="sub-skills" :class="isSubSkillsVisible ? 'visible' : ''">
-      <li v-for="subSkill in skill.subSkills" :key="subSkill">{{subSkill}}</li>
+      <li v-for="(subSkill, i) in skill.subSkills" :key="i">{{subSkill}}</li>
     </ul>
 
   </div>
