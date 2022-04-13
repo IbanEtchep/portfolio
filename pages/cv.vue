@@ -1,6 +1,6 @@
 <template>
 
-  <div class="curriculum">
+  <section id="curriculum">
     <h1 class="text-center">Curriculum vitæ</h1>
 
     //TODO Bouton de téléchargement pdf
@@ -20,8 +20,8 @@
 
       <ul>
         <li>2020 : Emploi saisonnier à la Ville d'Anglet (service espaces verts)</li>
-        <li>2021 : Stage de 5 semaines dans l'entreprise <a href="https://bab-radiokom.fr/">BAB-Radiokom</a> (création de leur site web)</li>
-        <li>2022 : Stage de 7 semaines à <a href="https://medialeads.fr/">Medialeads</a> </li>
+        <li>2021 : Stage de 5 semaines dans l'entreprise <a href="https://bab-radiokom.fr/" target="_blank">BAB-Radiokom</a> (création de leur site web)</li>
+        <li>2022 : Stage de 7 semaines à <a href="https://medialeads.fr/" target="_blank">Medialeads</a> </li>
         <li>Avril 2021 - Aujourd'hui : Auto-entreprise</li>
       </ul>
     </section>
@@ -45,7 +45,7 @@
       </div>
 
     </section>
-  </div>
+  </section>
 
 </template>
 
@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style lang="scss">
-.curriculum {
+#curriculum {
   section {
     margin-top: 3rem;
   }

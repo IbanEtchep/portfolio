@@ -2,8 +2,8 @@
   <header>
     <div class="wrapper">
 
-      <div class="logo">
-        <span>Iban</span> <span>Etchepareborde</span>
+      <div id="logo">
+        <nuxt-link to="/"><span>Iban</span> <span>Etchepareborde</span></nuxt-link>
       </div>
 
       <nav class="desktop-nav">
@@ -88,10 +88,14 @@ header {
   display: none;
 }
 
-.logo {
-  margin-left: 1rem;
-  font-size: 1.5rem;
-  font-weight: bolder;
+#logo {
+
+  a, a.nuxt-link-exact-active {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--text-color-primary);
+  }
 
   span {
     display: inline-block;
@@ -153,6 +157,5 @@ header {
 
 .nuxt-link-exact-active {
   color: var(--text-color-terciary);
-
 }
 </style>

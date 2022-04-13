@@ -57,7 +57,7 @@ export default {
 }
 
 .arrow-icon {
-  font-family: Arial;
+  font-family: serif;
 }
 
 </style>
