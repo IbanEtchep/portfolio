@@ -10,9 +10,20 @@
       {{ skill.title }}
     </h2>
 
-    <ul class="sub-skills" :class="isSubSkillsVisible ? 'visible' : ''">
-      <li v-for="(subSkill, i) in skill.subSkills" :key="i">{{subSkill}}</li>
-    </ul>
+    <div class="skill-body" :class="isSubSkillsVisible ? 'visible' : ''">
+      <ul>
+        <li v-for="(subSkill, i) in skill.subSkills" :key="i">{{subSkill}}</li>
+      </ul>
+
+      <h3 v-if="skill.projects">Projets : </h3>
+      <span v-for="(project, i) in skill.projects" :key="i">
+        <nuxt-link :to="'/portfolio/' + project">
+          {{ project }}
+        </nuxt-link>
+        <span v-if="i !== skill.projects.length - 1">,</span>
+      </span>
+
+    </div>
 
   </div>
 
@@ -32,16 +43,24 @@ export default {
 
 <style lang="scss">
 
-.sub-skills {
+.skill-body {
   display: none;
   background-color: var(--bg-primary);
   border-radius: 1rem;
   padding: 1.5rem;
   max-height: 0;
   transition: max-height .15s ease-out;
+
+  ul {
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
 }
 
-.sub-skills.visible {
+.skill-body.visible {
   display: block;
   max-height: 500px;
 }

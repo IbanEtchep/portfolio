@@ -20,7 +20,7 @@
         mariadb et apache sur un serveur dédié sous Debian.
       </p>
 
-      <p>Parmi mes loisirs, il y a l'informatique, la pelote basque, les randonnées à la montagne et le surf et j'ai un intérêt particulier pour la biologie.</p>
+      <p>Mais l'informatique n'est pas mon seul centre d'intérêt, il y a aussi la pelote basque, les randonnées à la montagne et le surf et j'ai un intérêt particulier pour la biologie.</p>
 
     </section>
   </div>

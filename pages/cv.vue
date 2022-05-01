@@ -29,19 +29,36 @@
     <section>
       <h2>Compétences</h2>
 
-      <div class="languages">
-        <h3>Langues</h3>
+      <div class="flex">
 
-        <ul>
-          <li>Basque - Niveau C2 (Certification EGA)</li>
-          <li>Français - Niveau Baccalauréat</li>
-          <li>Anglais - B2</li>
-          <li>Espagnol : A2</li>
-        </ul>
-      </div>
+        <div class="w-50">
+          <h3>Informatique</h3>
 
-      <div class="informatique">
-        <h3>Langues</h3>
+          <ul>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>VueJS</li>
+            <li>NuxtJS</li>
+            <li>Python</li>
+            <li>Symfony</li>
+            <li>Android</li>
+            <li>SQL</li>
+            <li>Redis</li>
+            <li>Administration systèmes Linux</li>
+          </ul>
+        </div>
+
+        <div class="w-50">
+          <h3>Langues</h3>
+
+          <ul>
+            <li>Basque - Niveau C2 (Certification EGA)</li>
+            <li>Français - Niveau Baccalauréat</li>
+            <li>Anglais - B2</li>
+            <li>Espagnol : A2</li>
+          </ul>
+        </div>
       </div>
 
     </section>
@@ -68,6 +85,25 @@ export default {
 
   li {
     margin-top: 0.5rem;
+
+    svg {
+      height: 16px;
+    }
+  }
+
+  section > div {
+    margin-bottom: 1.5rem;
+  }
+
+  .w-50 {
+    display: inline-block;
+    align-items: center;
+    width: 50%;
+    margin: 0;
+  }
+
+  .flex {
+    display: flex;
   }
 }
 </style>

@@ -10,6 +10,7 @@
         <nuxt-link to="/cv">CV</nuxt-link>
         <nuxt-link to="/portfolio">Portfolio</nuxt-link>
         <nuxt-link to="/skills">Compétences</nuxt-link>
+        <nuxt-link to="/veille">Veille</nuxt-link>
         <nuxt-link to="/contact">Contact</nuxt-link>
       </nav>
 
@@ -32,6 +33,7 @@
       <nuxt-link to="/cv">CV</nuxt-link>
       <nuxt-link to="/portfolio">Portfolio</nuxt-link>
       <nuxt-link to="/skills">Compétences</nuxt-link>
+      <nuxt-link to="/veille">Veille</nuxt-link>
       <nuxt-link to="/contact">Contact</nuxt-link>
     </nav>
   </header>

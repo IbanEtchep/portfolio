@@ -3,9 +3,9 @@ title: Apibook
 description: Application web en Symfony pour les apiculteurs !
 slug: apibook
 img: apibook-logo.png
+period: 5 janvier - 18 février 2022
+technologies: Symfony - PHP
 ---
-
-# APIBOOK
 
 ## Présentation
 

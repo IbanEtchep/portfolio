@@ -39,7 +39,7 @@ export default {
   },
   async asyncData({$content, params}) {
     const articles = await $content('projects', params.slug)
-      .only(['title', 'description', 'img', 'slug'])
+      .only(['title', 'description', 'img', 'slug', 'period'])
       .sortBy('createdAt', 'asc')
       .fetch()
 
@@ -50,7 +50,7 @@ export default {
       this.articles = await this.$content('projects')
         //.where({ 'title' : { '$regex': [e.target.value, 'i'] } })
         .search(e.target.value)
-        .only(['title', 'description', 'img', 'slug'])
+        .only(['title', 'description', 'img', 'slug', 'period'])
         .sortBy('createdAt', 'asc')
         .fetch()
       console.log('/^'+e.target.value+'$/i')
