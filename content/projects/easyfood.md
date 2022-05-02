@@ -9,9 +9,29 @@ img: apibook-logo.png
 
 ## Présentation
 
-![Diagramme](/images/easyfood/diagramme.png)
+La société EasyFood souhaite mettre en place un service de livraison de plats préparés par
+des restaurateurs. Les plats ne seraient pas préparés par EasyFood, mais par les
+restaurateurs partenaires.
+L'organisation souhaite toucher le public des restaurants qui livrent à domicile (pizzeria,
+japonais...), tout en proposant une bonne qualité gustative et des plats variés.
+Pour développer son activité, EasyFood se base sur des partenariats avec des restaurants
+déjà existants en leur proposant de gérer toute la partie commande-livraison. En échange, le
+restaurateur accepte de proposer les plats à un tarif inférieur à ceux pratiqués en salle. De
+cette manière EasyFood peut proposer la livraison des plats à un coût intéressant pour le
+consommateur, tout en générant un profit. Easyfood nous a alors contacté afin de construire
+LA solution clé en main de site internet permettant de satisfaire ce besoin.
+Nous avons été missionné pour participer à la conception et la réalisation de cette solution.
+Plusieurs fonctions nous ont été confiées :
+- Inscription et identification
+- Commande de client
+- Proposition de plats sur la plateforme
+- Evaluation des restaurants et de la plateforme EasyFood (commentaires + notes sur
+5)
+- Modération des commentaires et des plats
 
-Loren ipsun dolor sit anet, consectetur adipisci elit, sed eiusnod tenpor incidunt ut labore et dolore nagna aliqua. Ut enin ad ninin venian, quis nostrun exercitationen ullan corporis suscipit laboriosan, nisi ut aliquid ex ea connodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillun dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt nollit anin id est laborun.
+## Conception
+
+![Diagramme](/images/easyfood/diagramme.png)
 
 ## Technologies utilisées
 
