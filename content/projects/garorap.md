@@ -5,25 +5,25 @@ slug: apibook
 img: apibook-logo.png
 ---
 
-# APIBOOK
-
 ## Présentation
 
-Ce projet est un site que j'ai réalisé durant mon stage de 2ème année.
-C'est un site qui permet aux apiculteurs de gérer leurs ruchers et leurs ruches, avec tout ce qui va avec :
-- ToDoList
-- Suivi sanitaire
-- Suivi colonial
-- Suivi des reines
-- Suivi des ruches
-- Suivi des floraisons
-- Suivi de la pression du frelon
-- Affichage d'une carte montrant les points de floraisons et de pression du frelon en assemblant les données de tous les apiculteurs.
+Garorap est un projet d'AP.
+
+### Contexte
+
+Le festival GARORAP se déroule tous les ans au Barp au mois de Juillet sur une période
+de 3 jours.
+Il propose des concerts de RAP de groupes nationaux et internationaux, et attire de plus
+en plus de visiteurs (300 000 visiteurs par an en moyenne sur les dernières éditions).
+Comme le festival se déroule sur plusieurs jours, GARORAP propose aux visiteurs la
+possibilité de séjourner dans un camping intégré au festival. L'infrastructure est aussi
+complétée d'un mini-market, et de buvettes.
+Pour faciliter de déroulement du festival, les organisateurs souhaitent mettre en place un
+système de pass, à l'aide de bracelets adaptés.
 
 ## Technologies utilisées
 
-- Symfony (Doctrine, twig..)
-- PostgresSQL
-- Bootstrap
-- JQuery
-- Axios (pour l'ajax)
+- PHP
+- SQL
+- HTML - CSS
+- Pattern MVC
