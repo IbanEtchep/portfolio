@@ -1,7 +1,7 @@
 ---
-title: Apibook
+title: GARORAP
 description: Application web en Symfony pour les apiculteurs !
-slug: apibook
+slug: garorap
 img: apibook-logo.png
 ---
 
