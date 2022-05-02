@@ -5,8 +5,6 @@ slug: easyfood
 img: apibook-logo.png
 ---
 
-# APIBOOK
-
 ## Présentation
 
 La société EasyFood souhaite mettre en place un service de livraison de plats préparés par
