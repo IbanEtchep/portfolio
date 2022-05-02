@@ -1,6 +1,6 @@
 ---
 title: GARORAP
-description: Application web en Symfony pour les apiculteurs !
+description: Application web pour gérer un festival de rap !
 slug: garorap
 img: apibook-logo.png
 ---
