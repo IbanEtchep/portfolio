@@ -10,7 +10,7 @@
       </span>
         <input @input="searchChange" class="filter-item" type="search" aria-label="rechercher">
       </div>
-      <span class="filter-item">Categories</span>
+      <span class=""></span>
     </div>
 
     <div class="projects">

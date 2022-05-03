@@ -32,7 +32,12 @@ body {
 .wrapper {
   max-width: 1020px;
   margin: 0 auto;
+
+  img {
+    max-width: 100%;
+  }
 }
+
 
 @media (max-width: 1020px) {
   .wrapper {
