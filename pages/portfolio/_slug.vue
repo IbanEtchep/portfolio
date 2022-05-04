@@ -5,6 +5,9 @@
         <h1>{{ article.title }}</h1>
         <span class="period">{{ article.period }}</span>
       </div>
+
+      <Slider></Slider>
+
       <nuxt-content :document="article"/>
     </article>
     <div class="other-projects">

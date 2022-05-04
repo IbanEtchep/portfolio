@@ -20,7 +20,8 @@
         mariadb et apache sur un serveur dédié sous Debian.
       </p>
 
-      <p>Mais l'informatique n'est pas mon seul centre d'intérêt, il y a aussi la pelote basque, les randonnées à la montagne et le surf et j'ai un intérêt particulier pour la biologie.</p>
+      <p>Mais l'informatique n'est pas mon seul centre d'intérêt, il y a aussi la pelote basque, les randonnées à la
+        montagne et le surf et j'ai un intérêt particulier pour la biologie.</p>
 
     </section>
   </div>
@@ -58,6 +59,23 @@ export default {
 
   h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #about-header {
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      color: var(--text-color-secondary);
+    }
   }
 }
 
