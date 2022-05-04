@@ -24,13 +24,16 @@
 import { Swiper, Navigation, Pagination, Autoplay } from 'swiper'
 import 'swiper/swiper-bundle.min.css'
 export default {
+  props: [
+    'folder'
+  ],
   data() {
     return {
       images: []
     }
   },
   mounted() {
-    this.importAll(require.context('~/assets/ressources/apibook', true, /\.png$/));
+    this.importAll(require.context('~/assets/ressources/', true, /\.png$/));
 
     // configure Swiper to use modules. The modules were tested with SwiperJS v6.8.4 with NuxtJS v2.15.7
     // previously it was before export default. Moved here for performance issues. Move back in case of problems.
@@ -68,7 +71,10 @@ export default {
   },
   methods: {
     importAll(r) {
-      r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })));
+      r.keys().forEach(key => {
+        if(key.includes('./'+this.folder+'/'))
+        this.images.push({ pathLong: r(key), pathShort: key })
+      });
     },
   },
 }

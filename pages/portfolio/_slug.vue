@@ -6,7 +6,7 @@
         <span class="period">{{ article.period }}</span>
       </div>
 
-      <Slider></Slider>
+      <Slider :folder="article.slug" />
 
       <nuxt-content :document="article"/>
     </article>
