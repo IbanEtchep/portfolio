@@ -28,7 +28,9 @@ Pour ce faire j'ai utilisé l'outil en ligne [Balsamiq](https://balsamiq.com/wir
 Une fois le wireframe validé, j'ai créé un schéma de la structure de la base de données à l'aide
 de l'application [DBSchema](https://dbschema.com/index_fr.html).
 
-//TODO
+## Conception
+
+![DBSchema](/images/apibook/dbschema.png)
 
 ## Technologies utilisées
 
