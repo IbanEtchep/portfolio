@@ -35,6 +35,8 @@ l'application [DBSchema](https://dbschema.com/index_fr.html).
 
 ## Extraits de code
 
+//TODO
+
 ## Technologies utilisées
 
 - Frameword PHP Symfony (Doctrine, twig..)

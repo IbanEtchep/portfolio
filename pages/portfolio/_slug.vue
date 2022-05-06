@@ -55,10 +55,6 @@ export default {
 <style lang="scss">
 .other-projects, .related-skills {
   margin-top: 3rem;
-
-  h2 {
-    font-size: 2em;
-  }
 }
 
 .article-title {
