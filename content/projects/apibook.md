@@ -25,7 +25,7 @@ ligne [Balsamiq](https://balsamiq.com/wireframes/).
 
 Une fois le wireframe validé, j'ai créé un schéma de la structure de la base de données à l'aide de
 l'application [DBSchema](https://dbschema.com/index_fr.html).
-
+ 
 ## Conception
 
 ![DBSchema](/images/apibook/dbschema.png)
