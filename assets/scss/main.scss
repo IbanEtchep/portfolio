@@ -124,8 +124,8 @@ p {
     list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     padding-inline-start: 40px;
   }
 
@@ -156,6 +156,10 @@ p {
   margin-left: -1.5rem;
   background-image: url('/icons/link.svg');
   margin-top: 6px
+}
+
+.dark .icon.icon-link {
+  background-image: url('/icons/link-white.svg');
 }
 
 h2:hover .icon.icon-link, h3:hover .icon.icon-link, h4:hover .icon.icon-link, h5:hover .icon.icon-link {
