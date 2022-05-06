@@ -22,11 +22,17 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: var(--bg-secondary);
   color: var(--text-color-secondary);
   font-weight: 600;
+  margin-bottom: 150px;
 }
 
 .wrapper {
@@ -88,6 +94,7 @@ p {
 }
 
 .nuxt-content {
+  margin-top: 1rem;
 
   ul {
     margin-bottom: 1.25rem;

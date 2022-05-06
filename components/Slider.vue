@@ -11,10 +11,6 @@
     <!-- If pagination is needed -->
     <div class="swiper-pagination"></div>
 
-    <!-- If navigation buttons are needed -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
   </div>
 </template>
 
@@ -61,11 +57,6 @@ export default {
       autoplay: {
         delay: 3000
       },
-      // Navigation arrows if needed
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      }
       // Configure other options. Not tested
     })
   },
@@ -82,10 +73,11 @@ export default {
 
 <style scoped>
 .swiper {
-  height: 600px;
   overflow: hidden;
   position: relative;
+  height: 80vh;
   width: 100%;
+  background-color: var(--bg-primary);
 }
 .swiper-slide {
   align-items: center;

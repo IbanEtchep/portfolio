@@ -31,6 +31,60 @@ Plusieurs fonctions nous ont été confiées :
 
 ![Diagramme](/images/easyfood/diagramme.png)
 
+## Extraits de code 
+
+### Recherchen de plats
+
+
+Fonction pour filtrer les résultats selon plusieurs critères optionnels :
+```php
+public function search(?string $nomPlat, ?string $nomVille, ?string $nomTypePlat, ?int $minPrice, ?int $maxPrice) 
+{
+    $dql = "SELECT plat FROM App:Plat plat "
+    . "JOIN plat.leTypePlat type "
+    . "JOIN plat.leResto resto "
+    . "WHERE plat.platVisible=true ";
+    
+    if(isset($nomPlat)){
+    $dql = $dql. "AND plat.nomP LIKE :nomPlat ";
+    }
+    if(isset($nomTypePlat)){
+    $dql =  $dql. "AND type.libelleType LIKE :nomTypePlat ";
+    }
+    if(isset($nomVille)){
+    $dql =  $dql. "AND resto.villeR LIKE :nomVille ";
+    }
+    
+    if(isset($minPrice)){
+    $dql = $dql. "AND plat.prixClientP >= :minPrice ";
+    }
+    
+    if(isset($maxPrice)){
+    $dql =  $dql. "AND plat.prixClientP <= :maxPrice ";
+    }
+    
+    $req = $this->getEntityManager()->createQuery($dql);
+    
+    if(isset($nomPlat)){
+    $req->setParameter(":nomPlat", "%$nomPlat%");
+    }
+    if(isset($nomTypePlat)){
+    $req->setParameter(":nomTypePlat", "%$nomTypePlat%");
+    }
+    if(isset($nomVille)){
+    $req->setParameter(":nomVille", "%$nomVille%");
+    }
+    if(isset($minPrice)){
+    $req->setParameter(":minPrice", $minPrice);
+    }
+    if(isset($maxPrice)){
+    $req->setParameter(":maxPrice", $maxPrice);
+    }
+    
+    return $req->getResult();
+}
+```
+
 ## Technologies utilisées
 
 - Framework PHP Symfony (Doctrine, twig..)

@@ -21,6 +21,10 @@ export default {
 footer {
   background-color: var(--bg-primary);
   padding: 3rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 115px;
 
   .wrapper {
     display: flex;
