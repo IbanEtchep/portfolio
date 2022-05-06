@@ -82,6 +82,7 @@ export default {
   height: 80vh;
   width: 100%;
   background-color: var(--bg-primary);
+  border-radius: 10px;
 }
 .swiper-slide {
   align-items: center;
