@@ -62,9 +62,13 @@ export default {
   },
   methods: {
     importAll(r) {
+      console.log(this.folder)
+
       r.keys().forEach(key => {
-        if(key.includes('./'+this.folder+'/'))
-        this.images.push({ pathLong: r(key), pathShort: key })
+        console.log(key)
+        if(key.includes('./'+this.folder+'/')) {
+          this.images.push({ pathLong: r(key), pathShort: key })
+        }
       });
     },
   },

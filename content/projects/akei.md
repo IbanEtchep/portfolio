@@ -1,7 +1,7 @@
 ---
 title: AKEI
 description: Application android AKEI fait en AP.
-slug: AKEI
+slug: akei
 img: akei-thumb.png
 ---
 

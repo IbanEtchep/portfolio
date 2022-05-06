@@ -2,7 +2,7 @@
 title: GARORAP
 description: Application web pour gérer un festival de rap !
 slug: garorap
-img: apibook-logo.png
+img: garorap-thumb.png
 ---
 
 ## Présentation
