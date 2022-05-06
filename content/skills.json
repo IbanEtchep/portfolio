@@ -12,7 +12,6 @@
         "▸ Gérer des sauvegardes"
       ],
       "projects": [
-        "apibook", "babradiokom"
       ]
     },
     {
@@ -23,7 +22,7 @@
         "▸Traiter des demandes concernant les applications"
       ],
       "projects": [
-        "easyfood", "maison-des-ligues"
+        "apibook", "babradiokom", "easyfood", "maison-des-ligues"
       ]
     },
     {
@@ -56,7 +55,7 @@
         "▸Accompagner les utilisateurs dans la mise en place d’un service"
       ],
       "projects": [
-        "apibook"
+        "babradiokom"
       ]
     },
     {
@@ -66,9 +65,6 @@
         "▸Mettre en œuvre des outils et stratégies de veille informationnelle",
         "▸Gérer son identité professionnelle",
         "▸Développer son projet professionnel"
-      ],
-      "projects": [
-        "apibook"
       ]
     }
   ]
