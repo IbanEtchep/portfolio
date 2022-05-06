@@ -3,8 +3,6 @@
   <section id="curriculum">
     <h1 class="text-center">Curriculum vitæ</h1>
 
-    //TODO Bouton de téléchargement pdf
-
     <section>
       <h2>Formation</h2>
 
@@ -62,6 +60,14 @@
       </div>
 
     </section>
+
+    <div class="center-button-wrapper">
+      <a href="/documents/CV.pdf" target="_blank">
+        <div class="button">
+          Ouvrir en pdf
+        </div>
+      </a>
+    </div>
   </section>
 
 </template>

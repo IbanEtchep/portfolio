@@ -73,7 +73,8 @@ function iban_register_styles(){
     wp_enqueue_style('iban-style', get_template_directory_uri() . "/style.css" , array() , 1.0, 'all');
 
     if (class_exists('woocommerce')){
-        wp_enqueue_style('iban-woocommerce-style', get_template_directory_uri().'/assets/css/woocommerce.css', array('woocommerce-general'));
+        wp_enqueue_style('iban-woocommerce-style', get_template_directory_uri()
+		.'/assets/css/woocommerce.css', array('woocommerce-general'));
     }
 
 }
@@ -110,9 +111,7 @@ add_action('widgets_init', 'iban_register_widget');
 
 add_action( 'woocommerce_before_main_content', 'iban_add_sidebar', 11);
 
-//add_action('add_meta_boxes', 'iban_add_custom_box');
-
-//Remove Gutenberg Block Library CSS from loading on the frontend
+//Retirer du css intégré de base
 function smartwp_remove_wp_block_library_css(){
     wp_dequeue_style( 'wp-block-library' );
     wp_dequeue_style( 'wp-block-library-theme' );

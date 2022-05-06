@@ -10,6 +10,14 @@
 
     </div>
 
+    <div class="center-button-wrapper">
+      <a href="/documents/TableauSynthese.pdf" target="_blank">
+        <div class="button">
+          Accéder au tableau
+        </div>
+      </a>
+    </div>
+
   </section>
 </template>
 
@@ -35,6 +43,15 @@ export default {
 
 .skills {
   margin-top: 4rem;
+
+  button {
+    margin-top: 1rem;
+  }
+}
+
+.center .button {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skill {
