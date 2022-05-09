@@ -13,7 +13,7 @@ leurs ruchers et leurs ruches, avec tout ce qui va avec :
 
 - ToDoList
 - Suivi sanitaire
-- Suivi colonial
+- Suivi colonial 
 - Suivi des reines
 - Suivi des ruches
 - Suivi des floraisons
@@ -44,7 +44,84 @@ Enfin, j'ai développé les différentes parties de l'application, fonctionnalit
 
 ## Extraits de code
 
-//TODO
+Edition du niveau d'une floraison en AJAX.
+
+```php
+/**
+ * Editer une floraison
+ * @Route ("/flowering/editlevel/{id}/{newLevel}", name="app_flowering_edit")
+ */
+public function editLevel(Flowering $flowering, int $newLevel)
+{
+    $entityManager = $this->entityManager;
+    /** @var User $user */
+    $user = $this->getUser();
+    if (!$user || $flowering->getApiary()->getOwner() !== $user) {
+        return $this->json([
+            'message' => 'Unauthorized'
+        ], 403);
+    }
+
+    if ($newLevel !== $flowering->getFloweringLevel()) {
+        $floweringLog = $entityManager->getRepository(FloweringLog::class)->findByDate(new \DateTime('NOW'), $flowering);
+
+        if ($floweringLog === null) {
+            $floweringLog = new FloweringLog();
+            $flowering->addChangeLog($floweringLog);
+        }
+
+        $floweringLog
+            ->setLevel($flowering->getFloweringLevel())
+            ->setDateFrom($flowering->getFloweringUpdatedAt());
+        $flowering->setFloweringUpdatedAt(new \DateTime());
+        $flowering->setFloweringLevel($newLevel);
+        $entityManager->flush();
+    }
+
+    return $this->json(['level' => $newLevel]);
+}
+```
+
+````html
+{% for i in 1..5 %}
+    {% if i <= flowering.floweringLevel %}
+        <a class="js-star" href="{{ path('app_flowering_edit', {id: flowering.id, newLevel: i }) }}">
+          <i class="fas fa-star fa-xs""></i>
+        </a>
+    {% else %}
+        <a class="js-star" href="{{ path('app_flowering_edit', {id: flowering.id, newLevel: i }) }}">
+          <i class="far fa-star fa-xs"></i>
+        </a>
+    {% endif %}
+{% endfor %}
+````
+
+```javascript
+document.querySelectorAll('a.js-star').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const url = this.href;
+    const parent = this.parentElement
+
+    axios.post(url).then(function (response) {
+      const newLevel = response.data.level
+      for (let i = 0; i < parent.children.length; i++) {
+        let child = parent.children[i].firstElementChild;
+        if (i + 1 <= newLevel) {
+          if (child.classList.contains('far')) {
+            child.classList.replace('far', 'fas')
+          }
+        } else if (child.classList.contains('fas')) {
+            child.classList.replace('fas', 'far')
+        }
+      }
+    })
+  })
+})
+```
+
+
 
 ## Technologies utilisées
 
