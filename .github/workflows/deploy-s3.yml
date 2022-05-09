@@ -11,10 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Build static site
-      run: yarn install && yarn build
-    - name: Deploy static site to S3 bucket
-      run: aws s3 sync ./dist/ s3://portfolio-iban.s3.fr-par.scw.cloud --delete
     - uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl public-read --follow-symlinks --delete
