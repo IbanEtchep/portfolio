@@ -171,6 +171,7 @@ p {
 }
 
 .icon.icon-link {
+
   position: absolute;
   opacity: 0;
   background-repeat: no-repeat;
@@ -179,15 +180,16 @@ p {
   margin-left: -1.5rem;
   background-image: url('/icons/link.svg');
   margin-top: 6px;
+
   h3 & {
     margin-top: 2px;
   }
-}
 
-.dark .icon.icon-link {
-  background-image: url('/icons/link-white.svg');
-}
+  .dark & {
+    background-image: url('/icons/link-white.svg');
+  }
 
-h2:hover .icon.icon-link, h3:hover .icon.icon-link, h4:hover .icon.icon-link, h5:hover .icon.icon-link {
-  opacity: 100%;
+  h2:hover &, h3:hover &, h4:hover &,  h5:hover & {
+    opacity: 1;
+  }
 }
