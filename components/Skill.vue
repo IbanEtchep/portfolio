@@ -17,8 +17,8 @@
 
       <h3 v-if="skill.projects">Projets : </h3>
       <span v-for="(project, i) in skill.projects" :key="i">
-        <nuxt-link :to="'/portfolio/' + project">
-          {{ project }}
+        <nuxt-link :to="{ path: '/portfolio/' + project.slug, hash: project.hash }" v-scroll-to="{el: project.hash}">
+          {{ project.slug }}
         </nuxt-link>
         <span v-if="i !== skill.projects.length - 1">,</span>
       </span>

@@ -22,7 +22,14 @@
         "▸Traiter des demandes concernant les applications"
       ],
       "projects": [
-        "apibook", "babradiokom", "easyfood", "maison-des-ligues"
+        {
+          "slug": "apibook",
+          "hash": "#extraits-de-code"
+        },
+        {
+          "slug": "easyfood",
+          "hash": "#extraits-de-code"
+        }
       ]
     },
     {
@@ -33,7 +40,14 @@
         "▸Participer à l’évolution d’un site Web exploitant les données de l’organisation."
       ],
       "projects": [
-        "babradiokom"
+        {
+          "slug": "apibook",
+          "hash": "#extraits-de-code"
+        },
+        {
+          "slug": "easyfood",
+          "hash": "#extraits-de-code"
+        }
       ]
     },
     {
@@ -44,7 +58,14 @@
         "▸Évaluer les indicateurs de suivi d’un projet et analyser les écarts"
       ],
       "projects": [
-        "apibook", "babradiokom", "garorap", "easyfood"
+        {
+          "slug": "babradiokom",
+          "hash": "#mode-projet"
+        },
+        {
+          "slug": "easyfood",
+          "hash": "#mode-projet"
+        }
       ]
     },
     {
@@ -55,7 +76,10 @@
         "▸Accompagner les utilisateurs dans la mise en place d’un service"
       ],
       "projects": [
-        "babradiokom"
+        {
+          "slug": "babradiokom",
+          "hash": "#présentation"
+        }
       ]
     },
     {
