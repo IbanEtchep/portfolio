@@ -35,6 +35,28 @@ body {
   margin-bottom: 200px;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--text-color-terciary);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-link-color);
+}
+
 .wrapper {
   max-width: 1020px;
   margin: 0 auto;
@@ -155,7 +177,10 @@ p {
   height: 1rem;
   margin-left: -1.5rem;
   background-image: url('/icons/link.svg');
-  margin-top: 6px
+  margin-top: 6px;
+  h3 & {
+    margin-top: 2px;
+  }
 }
 
 .dark .icon.icon-link {

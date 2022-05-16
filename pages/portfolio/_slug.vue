@@ -48,7 +48,7 @@ export default {
     }
 
     return {article, relatedSkills}
-  }
+  },
 }
 </script>
 

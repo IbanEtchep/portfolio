@@ -37,7 +37,7 @@ export default {
 
 #about-header {
   background-color: var(--bg-secondary);
-  margin: 5rem 0;
+  margin: 2.5rem 0;
   box-shadow: none;
 
   .colored {

@@ -35,6 +35,8 @@
           <ul>
             <li>Java</li>
             <li>PHP</li>
+            <li>HTML</li>
+            <li>CSS - SCSS</li>
             <li>JavaScript</li>
             <li>VueJS</li>
             <li>NuxtJS</li>
