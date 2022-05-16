@@ -62,8 +62,6 @@ export default {
   },
   methods: {
     importAll(r) {
-      console.log(this.folder)
-
       r.keys().forEach(key => {
         console.log(key)
         if(key.includes('./'+this.folder+'/')) {
@@ -79,7 +77,6 @@ export default {
 .swiper {
   overflow: hidden;
   position: relative;
-  height: 80vh;
   width: 100%;
   background-color: var(--bg-primary);
   border-radius: 10px;
@@ -88,5 +85,6 @@ export default {
   align-items: center;
   display: flex;
   justify-content: center;
+  height: 100%;
 }
 </style>
