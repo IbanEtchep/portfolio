@@ -11,7 +11,10 @@
         "▸ Recenser et identifier les ressources numériques",
         "▸ Gérer des sauvegardes"
       ],
-      "projects": [
+      "tps" : [
+        {
+          "slug": "sauvegardes-sql"
+        }
       ]
     },
     {

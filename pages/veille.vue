@@ -7,7 +7,7 @@
 
     <div class="wrapper">
       <h2>Feedly</h2>
-      <p>Feedly est une application mobile qui permet de suivre des sources RSS. Je consultes régulièrement l'application quand je ne suis pas chez moi et que je dois attendre quelque chose.</p>
+      <p>Feedly est une application mobile et web qui permet de suivre des sources RSS. Je consultes régulièrement l'application quand je ne suis pas chez moi et que je dois attendre quelque chose.</p>
       <img :src="require(`~/assets/ressources/feedly.png`)" />
 
       <h2 class="mt-1rem">Réseaux sociaux</h2>

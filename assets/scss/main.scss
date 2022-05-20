@@ -35,6 +35,10 @@ body {
   margin-bottom: 200px;
 }
 
+em, strong {
+  font-weight: bold;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -157,6 +161,7 @@ p {
   }
 
   .nuxt-content-highlight {
+    margin-bottom: 1.25rem;
     pre {
       border-radius: 10px;
       background-color: var(--bg-primary);

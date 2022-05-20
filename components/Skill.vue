@@ -23,6 +23,14 @@
         <span v-if="i !== skill.projects.length - 1">,</span>
       </span>
 
+      <h3 v-if="skill.tps">Travaux pratiques : </h3>
+      <span v-for="(tp, i) in skill.tps" :key="i">
+        <nuxt-link :to="{ path: '/tp/' + tp.slug }">
+          {{ tp.slug }}
+        </nuxt-link>
+        <span v-if="i !== skill.tps.length - 1">,</span>
+      </span>
+
     </div>
 
   </div>
