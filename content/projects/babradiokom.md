@@ -10,10 +10,24 @@ period: fin mai - juin 2021
 
 Ce projet est un site que j'ai réalisé durant mon stage de 1ère année de BTS SIO dans l'entreprise BAB RADIOKOM.
 
-BAB RADIOKOM est le spécialiste des systèmes de radiocommunications pour les départements 64 et 40 (Pyrénées Atlantiques et Landes).
-Ils interviennent dans le conseil , la vente , la maintenance , la location de systèmes radios et dans l'étude et l'installation de systèmes de vidéosurveillance.
+BAB RADIOKOM est le spécialiste des systèmes de radiocommunications pour les départements 64 et 40 (Pyrénées-Atlantiques et Landes).
+Ils interviennent dans le conseil, la vente, la maintenance, la location de systèmes radios et dans l'étude et l'installation de systèmes de vidéosurveillance.
 
 Ce projet m'a permis de progresser en html/css/php et d'apprendre à créer un thème Wordpress.
+
+## Technologies utilisées
+
+- Wordpress
+- PHP
+- HTMl/CSS
+
+## Mode projet
+
+Pour créer ce site web, le travail se faisait en méthodologie Agile,
+chaque début de semaine, on faisait une visioconférence avec le 
+professeur référent pour parler de comment s'est déroulé la semaine 
+précédente et vérifier si les objectifs ont été 
+réalisés, puis on définissait les objectifs de la semaine suivante.
 
 ## Extraits de code 
 
@@ -120,10 +134,3 @@ function smartwp_remove_wp_block_library_css(){
 } 
 add_action( 'wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100 );
 ```
-
-
-## Technologies utilisées
-
-- Wordpress
-- PHP
-- HTMl/CSS

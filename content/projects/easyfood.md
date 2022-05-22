@@ -2,7 +2,7 @@
 title: EasyFood 
 description: Application de commande de plats en Symfony !
 slug: easyfood 
-img: apibook-logo.png
+img: easyfood-thumb.png
 ---
 
 ## Présentation
@@ -23,9 +23,25 @@ conception et la réalisation de cette solution. Plusieurs fonctions nous ont é
 - Evaluation des restaurants et de la plateforme EasyFood (commentaires + notes sur 5)
 - Modération des commentaires et des plats
 
+
+## Technologies utilisées
+
+- Framework PHP Symfony (Doctrine, twig..)
+- MariaDB
+- Bootstrap
+
 ## Conception
 
 ![Diagramme](/images/easyfood/diagramme.png)
+
+## Mode projet
+
+Pour ce projet, nous nous sommes organisés avec un trello. Nous y avons créé 3 sections
+(À faire, en cours et terminé), nous avons ajouté les fonctionnalités du cahier des charges
+dans à faire et les avons assignés équitablement aux membres de l'équipe.
+Nous avons ensuite déplacé les tickets au fur et à mesure de l'avancée.
+
+Voir [Dossier bilan](#dossier-bilan)
 
 ## Extraits de code
 
@@ -81,8 +97,7 @@ public function search(?string $nomPlat, ?string $nomVille, ?string $nomTypePlat
 }
 ```
 
-## Technologies utilisées
+## Dossier bilan
 
-- Framework PHP Symfony (Doctrine, twig..)
-- MariaDB
-- Bootstrap
+[Dossier bilan](/documents/bilan_easyfood.pdf)
+

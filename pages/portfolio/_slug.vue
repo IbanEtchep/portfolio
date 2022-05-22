@@ -2,7 +2,8 @@
   <div>
     <article>
       <div class="article-title">
-        <h1>{{ article.title }}</h1>
+        <h1>
+          {{ article.title }}</h1>
         <span class="period">{{ article.period }}</span>
       </div>
 
@@ -10,10 +11,6 @@
 
       <nuxt-content :document="article"/>
     </article>
-    <div class="other-projects">
-      <h2>Projets associés</h2>
-      <nuxt-link to=""></nuxt-link>
-    </div>
 
     <div v-if="relatedSkills.length !== 0" class="related-skills">
       <h2>Compétences associés</h2>

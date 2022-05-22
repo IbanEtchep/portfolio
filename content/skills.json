@@ -32,6 +32,14 @@
         {
           "slug": "easyfood",
           "hash": "#extraits-de-code"
+        },
+        {
+          "slug": "babradiokom",
+          "hash": "#extraits-de-code"
+        },
+        {
+          "slug": "maison-des-ligues",
+          "hash": "#extraits-de-code"
         }
       ]
     },
@@ -44,12 +52,8 @@
       ],
       "projects": [
         {
-          "slug": "apibook",
-          "hash": "#extraits-de-code"
-        },
-        {
-          "slug": "easyfood",
-          "hash": "#extraits-de-code"
+          "slug": "babradiokom",
+          "hash": ""
         }
       ]
     },
@@ -63,6 +67,10 @@
       "projects": [
         {
           "slug": "babradiokom",
+          "hash": "#mode-projet"
+        },
+        {
+          "slug": "apibook",
           "hash": "#mode-projet"
         },
         {

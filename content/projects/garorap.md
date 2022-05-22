@@ -27,3 +27,12 @@ système de pass, à l'aide de bracelets adaptés.
 - SQL
 - HTML - CSS
 - Pattern MVC
+
+
+## Modèle entité-association
+
+![MCD](/images/garorap/mea.png)
+
+## Dossier bilan
+
+[Dossier bilan](/documents/bilan_garorap.pdf)
