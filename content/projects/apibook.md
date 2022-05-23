@@ -20,7 +20,7 @@ leurs ruchers et leurs ruches, avec tout ce qui va avec :
 - Suivi de la pression du frelon
 - Affichage d'une carte montrant les points de floraisons et de pression du frelon en assemblant les données de tous les
   apiculteurs.
-- 
+
 ## Technologies utilisées
 
 - Frameword PHP Symfony (Doctrine, twig..)
