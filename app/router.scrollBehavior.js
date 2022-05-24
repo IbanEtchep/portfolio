@@ -19,7 +19,6 @@ export default async function (to, from, savedPosition) {
 
   if (to.hash) {
     let el = await findEl(to.hash);
-    console.log(el)
     return el.scrollIntoView()
   }
 

@@ -47,11 +47,8 @@ export default {
     }
   },
   mounted() {
-    console.log(encodeURIComponent(this.skill.title))
-    console.log(window.location.hash)
     if (window.location.hash === '#'+encodeURIComponent(this.skill.title)) {
       this.isSubSkillsVisible = true
-      console.log("a")
     }
   }
 }
