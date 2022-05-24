@@ -63,7 +63,7 @@ export default {
   methods: {
     importAll(r) {
       r.keys().forEach(key => {
-        console.log(key)
+        //console.log(key)
         if(key.includes('./'+this.folder+'/')) {
           this.images.push({ pathLong: r(key), pathShort: key })
         }

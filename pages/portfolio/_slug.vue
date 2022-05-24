@@ -15,7 +15,11 @@
     <div v-if="relatedSkills.length !== 0" class="related-skills">
       <h2>Compétences associés</h2>
       <ul>
-        <li v-for="relatedSkill in relatedSkills">{{ relatedSkill.title }}</li>
+        <li v-for="relatedSkill in relatedSkills">
+          <nuxt-link :to="{ path: '/skills/', hash: relatedSkill.title }">
+            {{ relatedSkill.title }}
+          </nuxt-link>
+        </li>
       </ul>
     </div>
   </div>
@@ -37,7 +41,7 @@ export default {
       let skill = skills.skills[i]
       if (skill.projects !== undefined) {
         skill.projects.forEach(project => {
-          if (project === article.slug) {
+          if (project.slug === article.slug) {
             relatedSkills.push(skill)
           }
         })
@@ -52,6 +56,10 @@ export default {
 <style lang="scss">
 .other-projects, .related-skills {
   margin-top: 3rem;
+
+  li {
+    list-style: inside;
+  }
 }
 
 .article-title {

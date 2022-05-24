@@ -17,7 +17,7 @@
 
       <h3 v-if="skill.projects">Projets : </h3>
       <span v-for="(project, i) in skill.projects" :key="i">
-        <nuxt-link :to="{ path: '/portfolio/' + project.slug, hash: project.hash }" v-scroll-to="{el: project.hash}">
+        <nuxt-link :to="{ path: '/portfolio/' + project.slug, hash: project.hash }">
           {{ project.slug }}
         </nuxt-link>
         <span v-if="i !== skill.projects.length - 1">,</span>
@@ -44,6 +44,14 @@ export default {
   data() {
     return {
       isSubSkillsVisible: false,
+    }
+  },
+  mounted() {
+    console.log(encodeURIComponent(this.skill.title))
+    console.log(window.location.hash)
+    if (window.location.hash === '#'+encodeURIComponent(this.skill.title)) {
+      this.isSubSkillsVisible = true
+      console.log("a")
     }
   }
 }
