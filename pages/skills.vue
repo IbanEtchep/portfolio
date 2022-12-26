@@ -30,9 +30,7 @@ export default {
     };
   },
   async asyncData({$content, params}) {
-    const skills = await $content('skills').only(['skills']).fetch()
-    //console.log(skills)
-    return skills;
+    return await $content('skills').only(['skills']).fetch();
   },
 }
 

@@ -11,6 +11,17 @@
         </svg>
       </a>
       </div>
+
+      <div class="link-icon">
+        <a href="https://www.linkedin.com/in/iban-etchepareborde-277118224/" target="_blank">
+          <span class="visually-hidden">Visitez mon linkedin !</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" stroke="currentColor" viewBox="0 0 512 512">
+            <path d="M192 192h88.553v45.391h1.266c12.32-22.097 42.479-45.391 87.421-45.391 93.473 0 110.76 58.188 110.76 133.867v154.133h-92.305v-136.639c0-32.592-0.667-74.513-48.014-74.513-48.074 0-55.41 35.493-55.41 72.146v139.006h-92.271v-288z"/>
+            <path d="M32 192h96v288h-96v-288z"/>
+            <path d="M128 112c0 26.51-21.49 48-48 48s-48-21.49-48-48c0-26.51 21.49-48 48-48s48 21.49 48 48z"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 </template>
@@ -37,7 +48,7 @@ footer {
   }
 
   .link-icon {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     svg {
       color: var(--text-color-primary);
     }

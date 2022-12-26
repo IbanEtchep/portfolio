@@ -2,13 +2,13 @@
 
   <div class="skill">
 
-    <h2 @click="isSubSkillsVisible = !isSubSkillsVisible">
+    <h3 @click="isSubSkillsVisible = !isSubSkillsVisible">
       <span class="arrow-icon">
         <span v-if="isSubSkillsVisible">▼</span>
         <span v-else>▶</span>
       </span>
       {{ skill.title }}
-    </h2>
+    </h3>
 
     <div class="skill-body" :class="isSubSkillsVisible ? 'visible' : ''">
       <ul>
@@ -79,7 +79,7 @@ export default {
 }
 
 .skill {
-  h2 {
+  h3 {
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
