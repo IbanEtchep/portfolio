@@ -2,8 +2,6 @@
   <section>
     <h1 class="text-center">Compétences BTS</h1>
 
-    <p class="text-center">Cette page recense les compétences que j'ai acquis durant mes 2 années de BTS SIO. </p>
-
     <div class="skills">
 
       <Skill v-for="(skill, i) in skills" :skill="skill" :key="i"/>
